@@ -1,0 +1,165 @@
+.item-product {
+  background-color: #ffffff; 
+
+  &>a {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.product-title {
+  margin-top: 25px;
+  line-height: 1.3em;
+  font-size: 14px;
+  color: #333;
+  padding: 0 10px;
+}
+
+.product-price {
+  padding: 5px 10px 5px 10px;
+
+  &>strong {
+    font-size: 14px;
+    color: #e10c00;
+    line-height: 15px;
+    vertical-align: middle;
+  }
+
+  &>span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin-left: 5px;
+    color: #222;
+  }
+}
+
+.product-shock-price {
+  display: inline-block;
+  position: absolute;
+  top: 142px;
+  left: 10px;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 600;
+  background: #3fb846;
+  border-radius: 2px;
+  padding: 0 5px;
+  height: 18px;
+}
+
+.installment {
+  @extend .product-shock-price;
+  background: #f28902;
+}
+
+.product-new {
+  @extend .product-shock-price;
+  background: #1191f8;
+}
+
+.product-discount {
+  @extend .product-shock-price;
+  background-image: linear-gradient(-90deg,#ec1f1f 0%,#ff9c00 100%);
+  padding: 1px 7px;
+  position: absolute;
+  border-radius: 50px;
+}
+
+.accessory-per {
+  @extend .product-shock-price;
+  background: #ee170b;
+}
+
+.head {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.head-title {
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.list-product {
+  &>ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    background-color: #e7e7e7;
+    grid-auto-rows: 1fr;
+
+    &>li {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.two-col {
+  grid-column: span 2
+}
+
+.promo {
+  padding: 0 10px;
+
+  &>p {
+    color: #333333;
+    font-size: 12px;
+
+    &>span {
+      font-weight: bold;
+    }
+  }
+}
+
+.promo-type-1 {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+
+  &>img {
+    width: 100%;
+    height: auto;
+  }
+
+  &>p {
+    padding-left: 7px;
+  }
+}
+
+.img-full-size {
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+  height: auto;
+}
+
+.label-full-size {
+  top: auto;
+  left: auto;
+  right: 10px;
+  bottom: 0;
+}
+
+.item-product>a {
+  position: relative;
+  display: block;
+}
+
+.product-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.hover {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.item-product:hover {
+  .hover { transform: translateY(-10px); }
+  .product-title { color: #1191f8; }  
+}

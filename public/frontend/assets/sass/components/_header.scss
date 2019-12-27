@@ -1,0 +1,95 @@
+.header{
+    background-color:aquamarine;
+
+    .container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+
+.header-search {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+}
+
+.search-input {
+    margin-left: 10px;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.input-search {
+    padding: 3px 0 3px 8px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+}
+
+.search-button {
+    height: 30px;  
+    border: none;
+    background-color: #ffffff;
+    padding-right: 8px;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-icon {
+    background-image: url('https://cdn.thegioididong.com/v2015/Content/desktop/images/V4/icondesktop@1x.png?v=001');
+    background-position: -160px 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.logo-icontgdd {
+    background-position: 0 0;
+    width: 156px;
+    height: 30px;
+    display: block;
+    background-image: url('https://cdn.thegioididong.com/v2015/Content/desktop/images/V4/icondesktop@1x.png?v=001')
+}
+
+$navList: (
+    ('icontgdd-mobile', -190px, 0, 16px),
+    ('icontgdd-tablet', -209px, 0, 33px),
+    ('icontgdd-laptop', -245px, 0, 39px),
+    ('icontgdd-phukien', -288px, 0, 22px),
+    ('icontgdd-watch', -362px, -50px, 16px),
+    ('icontgdd-maydoitra', -315px, 0, 34px),
+    ('icontgdd-news', -375px, 0, 29px),
+    ('icontgdd-ask', -410px, 0, 25px)
+);
+
+@each $className, $x, $y, $width in $navList {
+    .#{$className} {
+        background-position: $x $y;
+        width: $width;
+        height: 30px;
+        background-image: url('https://cdn.thegioididong.com/v2015/Content/desktop/images/V4/icondesktop@1x.png?v=001');
+        display: block;
+    }
+}
+
+.nav-item-logo {
+    margin: auto;
+}
+
+.nav {
+    &>ul {
+        justify-content: space-around;
+        margin-bottom: 0;
+    }
+}
+
+.nav-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 12.5%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f5f5f5;
+    }
+}

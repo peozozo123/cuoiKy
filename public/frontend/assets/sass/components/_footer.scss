@@ -1,0 +1,137 @@
+footer {
+  background-color: #ffffff;
+  margin-top: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .state {
+    display: grid;
+    grid-template-columns: repeat(3, 29.5%) 1fr;
+  }
+
+  ul {
+    &>li>a {
+      display: block;
+      font-size: 14px;
+      line-height: 25px;
+      padding-top: 5px;
+    }
+  }
+}
+
+.foot-item-type-one {
+  cursor: pointer;
+  &>a { 
+    color: #288ad6; 
+    &>span {
+      font-weight: 600;
+    }
+  }
+  &:hover>a { color: #666 }
+}
+
+.foot-item-type-two {
+  &>p {
+    color: #666666;
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 5px;
+  }
+}
+
+.tel {
+  display: inline;
+  font-weight: 600;
+  color: #333;
+  padding: 0 5px;
+
+  &:hover {
+    color: #666666;
+  }
+}
+
+.bct {
+  display: block;
+}
+
+%icontgdd {
+  background-image: url(https://cdn.thegioididong.com/v2015/Content/desktop/images/V4/icondesktop@1x.png?v=001);
+  display: block;
+}
+
+.icontgdd-bct {
+  @extend %icontgdd;
+  background-position: 0 -50px;
+  width: 123px;
+  height: 38px;
+}
+
+.icontgdd-fb {
+  @extend %icontgdd;
+  background-position: 0 -30px;
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+}
+
+.icontgdd-yt {
+  @extend %icontgdd;
+  background-position: -16px -30px;
+  width: 17px;
+  height: 13px;
+  margin-right: 3px;
+}
+
+.icontgdd-dmx {
+  @extend %icontgdd;
+  background-position: -34px -30px;
+  width: 111px;
+  height: 19px;
+  margin: 5px 0;
+}
+
+.foot-end {
+  display: block;
+  width: 100%;
+  margin: auto;
+  font-size: 10px;
+  color: #999;
+  text-align: center;
+}
+
+.social-sub {
+  font-size: 12px;
+  line-height: 1;
+  color: #288ad6;
+}
+
+.social {
+  display: flex;
+  padding-top: 7px;
+}
+
+.facebook>a, .youtube>a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.facebook {
+  border-right: 1px solid #e9e9e9;
+  padding-right: 10px;
+}
+
+.youtube {
+  margin-left: 10px;
+}
+
+.group-websites {
+  &>.title
+  {  
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+  }
+}

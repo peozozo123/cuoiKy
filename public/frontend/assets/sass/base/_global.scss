@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+figure {
+    display: block;
+}
+
+h3, h2 {
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1200px;
+    box-sizing: content-box;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+p {
+    margin-bottom: 0;    
+}
+
+body {
+    position: relative;
+}
